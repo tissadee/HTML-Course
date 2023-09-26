@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            border: 1px solid chartreuse;
+        }
+        
+        div {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<!-- การสร้างตาราง
+    <table> ใช้กำหนดสำหรับสร้างตาราง
+    <thead> ใช้กำหนดกลุ่มเนื้อหาส่วนหัวตาราง
+    <tbody> ใช้กำหนดกลุ่มเนื้อหาตาราง
+    <tfoot> ใช้กำหนดกลุ่มส่วนตาราง
+    <tr> แถว
+    <td> คอลัมน์
+    <th> กำหนดคอลัมน์ที่แสดงผลในส่วนหัวของตาราง
+
+    Attribute 
+    border = "" กำหนดเส้นขอบและความหนาของเส้น
+    width = "%"  กำหนดความกว้างหน่วยเป็น %
+    bgcolor = "" กำหนดสีพื้นหลัง
+    <table bgcolor = ""> กำหนดสีแถวและคอลัมน์
+    <tr bgcolor = ""> กำหนดสีแถว
+    <td bgcolor = ""> กำหนดสีคอลัมน์
+
+    colspan="x" รวมคอลัมน์ ค่า X คือจำนวนคอลัมน์ที่ต้องการรวมเข้าด้วยกัน (ช่อง <td>)
+    rowspan="x" รวมแถว ค่า x คือจำนวนแถวที่ต้องการรวมเข้าด้วยกัน
+    align="left,center,right" จัดตำแหน่งของภาพ หรืออักษรภายในช่องตาราง <tb> ค่าปตกิคือ left
+    Cellpadding แสดงข้อมูลภายในตาราง หากมีค่ามากก็จะมีพื้นที่การแสดงผลเป็นที่ว่างมากขึ้น โดยมีค่าเริ่มต้นเป็น 0 (หน่วย pixel)
+    Cellspacing กำหนดขนาดเส้นตาราง หากมีค่ามากขึ้นเส้นตารางก็ จะมีขนาดมากตามไปด้วย โดยมีค่าเริ่มต้นเป็น 0 (หน่วย pixel)
+ -->
+
+<body>
+    <h1>ตารางสินค้า</h1>
+    <table border="1" bgcolor="red" width="50%" cellpadding="10" cellspacing="5">
+        <thead bgcolor="blue" align="center">
+            <th>รหัสสินค้า</th>
+            <th>ภาพสินค้า</th>
+            <th>ชื้อสินค้า</th>
+            <th>ราค้า</th>
+            <th>ดำเนินการ</th>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>P00</td>
+                <td><img src="https://www.unileverfoodsolutions.co.th/dam/global-ufs/mcos/SEA/calcmenu/recipes/TH-recipes/salads/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3%E0%B9%84%E0%B8%97%E0%B8%A2/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B8%B3%E0%B9%84%E0%B8%97%E0%B8%A2_header.jpg"
+                        alt="" width="80px" height="80px"></td>
+                <td>ส้มตำ</td>
+                <td>150.00</td>
+                <td><a href="#">สินค้า </a></td>
+            </tr>
+            <tr>
+                <td>P01</td>
+                <td><img src="https://www.ktc.co.th/pub/media/Article/05/steak-restaurants-near-me-sources-of-deliciousne-1448x543.webp" alt="" width="80px" height="80px"></td>
+                <td>สเต็ก</td>
+                <td>150.00</td>
+                <td><a href="#">สินค้า </a></td>
+            </tr>
+
+            <tfoot>
+                <tr align="right">
+                    <td colspan="5"><strong>รวม</strong> </td>
+
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    <!--
+        <span> ใช้จัดกลุ่มข้อความหรือแท็กต่างๆ เข้าเป็นกลุ่มเดียวกันเพื่อกำหนด สี รูปแบบตัวอักษร 
+               หรือ style ให้กับข้อความและแท็กภายใต้<span>ให้เป็นแบบเดียวกัน
+        <div> ใช้จัดกลุ่มข้อความหรือแท็กต่างๆ เข้าเป็นกลุ่มเดียวกันลักษณะคล้ายๆกับ<span>
+               แต่แตกต่างกันตรงที่แท็ก div จะมีการขึ้นบรรทัดใหม่ก่อนเริ่มแสดงข้อความภายใต้แท็ก div
+         style="color:สี " สี
+    -->
+    <span style="color:red">     กลุ่มข้อความหรือแท็กต่างๆ   </span>
+    <span>     กลุ่มข้อความหรือแท็กต่างๆ   </span>
+    <span>     กลุ่มข้อความหรือแท็กต่างๆ   </span>
+    <div> กลุ่มข้อความหรือแท็กต่างๆ</div>
+    <div> กลุ่มข้อความหรือแท็กต่างๆ</div>
+    <div> กลุ่มข้อความหรือแท็กต่างๆ</div>
+
+</body>
+
+</html>
