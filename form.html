@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formการลงทะเบียน</title>
+    <style>
+        form {
+            border: 2px solid blue;
+        }
+        
+        input {
+            border: 2px solid yellow;
+        }
+    </style>
+</head>
+<!--
+    <input> สร้างช่องรับความต่างๆ
+    <select> แสดงตัวเลือกในรูปแบบ Drop-down
+    <option> สร้างตัวเลือก
+    <button> สร้างปุ่ม
+    <label> กำหนดป้ายชื่อให้ช่องรับข้อมูล
+    <textarea> สร้างช่องรับข้อความแบบหลายบรรทัด
+
+-->
+<!-- 
+    Block Elementความยาวเต็มบรรทัด เช่น
+    <address>
+    <article>
+    <aside>
+    <blockquote>
+    <canvas>
+    <dd>
+    <div>
+    <dl>
+    <table>
+    <dt>
+    <fieldet>
+    <figcaption>
+    <figure>
+    <footer>
+    <form>
+    <h1>-<h6>
+    <header>
+    <tfoot>
+    <hr>
+    <li>
+    <main>
+    <nav>
+    <noscript>
+    <ol>
+    <p>
+    <pre>
+    <section>
+    <ul>
+    <video>
+    Inline Elementความกว้างเท่ากับข้อความที่แสดง
+    <a>
+    <abbr>
+    <acronym>
+    <b>
+    <bdo>
+    <big>
+    <br>
+    <button>
+    <cite>
+    <code>
+    <dfn>
+    <em>
+    <i>
+    <img>
+    <input>
+    <kbd>
+    <label>
+    <map>
+    <object>
+    <output>
+    <q>
+    <samp>
+    <script>
+    <select>
+    <small>
+    <span>
+    <strong>
+    <sub>
+    <sup>
+    <textarea>
+    <time>
+    <tt>
+    <var>
+-->
+
+<body>
+    <h1 align="center">แบบฟอร์การลงทะเบียน</h1>
+    <p>
+        <a href="index.html">กลับ</a></p>
+    <form align="center">
+        <div>
+            <label for="firsname">ชื่อจริง</label>
+            <input type="text" name="fname" placeholder="ป้อนชื่อของคุณ(ไทย)" required>
+        </div>
+        <div>
+            <label for="lastname">นามสกุล</label>
+            <input type="text" name="lname" placeholder="ป้อนนามสกุลของคุณ(ไทย)" required>
+        </div>
+        <div>
+            <label for="lastname">อีเมล</label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label for="lastname">รหัสผ่าน</label>
+            <input type="password" name="password" required>
+        </div>
+        <div>
+            <label for="">ที่อยู่</label>
+            <textarea name="" id="" cols="20" rows="5" required></textarea>
+        </div>
+        <div>
+            <label for="lastname">อายุ</label>
+            <input type="number" name="age" min="0" max="26" value="2" readonly>
+        </div>
+        <div>
+            <label for="lastname">วันเกิด</label>
+            <input type="date" name="birthdate">
+        </div>
+        <div>
+            <label for="lastname">เบอร์โทรศัพท์</label>
+            <input type="tel" name="tel">
+        </div>
+        <div>
+            <label for="lastname">สีที่ชอบ</label>
+            <input type="color" name="colcr">
+        </div>
+        <div>
+            <label for="lastname">ช่วงตัวเลข</label>
+            <input type="range" name="rangeunmber" value="5">
+        </div>
+        <div>
+            <label for="lastname">ระดับการศึกษา</label>
+            <select name="edu" id="">
+            <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+            <option value="ปริญญาตรี">ปริญญาตรี</option>
+            <option value="ปริญญาตโท"selected>ปริญญาตโท</option>
+        </select>
+        </div>
+        <div>
+            <label for="lastname">เพศ</label>
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">กำหนดเอก
+        </div>
+        <div>
+            <label for="lastname">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="gender">เล่นเกม
+            <input type="checkbox" name="gender">เขียนเว็บ
+            <input type="checkbox" name="gender">ดูหนัง
+            <input type="checkbox" name="gender">ฟังเพลง
+            <input type="checkbox" name="gender">อื่นๆ
+
+        </div>
+        <div>
+            <label for="lastname">แบบเอกสาร</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="lastname">เว็บไซต์</label>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" value="บันทึกข้อมูล">
+            <button type="submit">บันทึกข้อมูล</button>
+            <input type="reset" value="ล้างข้อมูล">
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </form>
+    <span style="border: 1px solid red">tissadeefflkfldlskfdslsssssssssssssssssssssssssssssssssssssssss</span>
+</body>
+
+</html>
